@@ -3,11 +3,19 @@
   src: url('/fonts/Bebas-Neue.woff2') format('woff2');
   font-weight: 400;
   font-style: normal;
-  font-display: swap;
+  font-display: block;
+}
+
+@font-face {
+  font-family: 'Cookie';
+  src: url('/fonts/Cookie-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: block;
 }
 
 @import 'tailwindcss';
 @theme {
   --font-bebas: "Bebas-Neue", sans-serif;
+  --font-cookie: "Cookie", sans-serif;
 }
-
