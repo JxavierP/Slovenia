@@ -1,18 +1,29 @@
+@font-face {
+  font-family: 'Cookie';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/Cookie-Regular.woff2') format('woff2');
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 400;
+  font-display: block;
+  src: url('/fonts/Bebas-Neue-Regular.woff2') format('woff2')
+}
+
+@font-face {
+  font-family: 'Bebas Neue';
+  font-style: normal;
+  font-weight: 600;
+  font-display: block;
+  src: url('/fonts/Bebas-Neue-Semibold.woff2') format('woff2');
+}
+
 @import "tailwindcss";
-
-:root {
-  --background-rgb: 214, 219, 220;
-  --foreground-rgb: 0, 0, 0;
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background-rgb: 0, 0, 0;
-    --foreground-rgb: 255, 255, 255;
-  }
-}
-
-body {
-  background: rgb(var(--background-rgb));
-  color: rgb(var(--foreground-rgb));
+@theme {
+  --font-cookie: 'Cookie', sans-serif;
+  --font-bebas: 'Bebas Neue', sans-serif;
 }
