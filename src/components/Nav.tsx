@@ -4,17 +4,21 @@ export default function Nav() {
   return (
     <nav class="bg-green-200 text-emerald-900">
       <div class="mx-auto max-w-[94%] w-full justify-between flex h-20 items-center">
-        <span>menu</span>
-        <span class="font-cookie text-4xl">Slovenia Travels</span>
-        <ul class="flex gap-5">
-          <li class="font-bebas uppercase text-3xl font-semibold">
+        <span class="font-cookie text-4xl">
+          <a href="/">Slovenia Travels</a>
+        </span>
+        <ul class="flex gap-14">
+          <li class="font-bebas uppercase text-[1.62rem] font-semibold cursor-pointer link-underline">
             destinations
           </li>
-          <li class="font-bebas uppercase text-3xl font-semibold">
+          <li class="font-bebas uppercase text-[1.62rem] font-semibold cursor-pointer link-underline">
             departures
           </li>
-          <li class="font-bebas uppercase text-3xl font-semibold">
+          <li class="font-bebas uppercase text-[1.62rem] font-semibold cursor-pointer link-underline">
             our process
+          </li>
+          <li class="font-bebas uppercase text-[1.62rem] font-semibold cursor-pointer link-underline">
+            travel now!
           </li>
         </ul>
       </div>
