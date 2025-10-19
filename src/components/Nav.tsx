@@ -3,11 +3,11 @@ import { useLocation } from "@solidjs/router";
 export default function Nav() {
   return (
     <nav class="bg-green-200 text-emerald-900">
-      <div class="mx-auto max-w-[94%] w-full justify-between flex h-20 items-center">
-        <span class="font-cookie text-4xl">
+      <div class="mx-auto max-w-[94%] w-full justify-between flex h-15 items-center">
+        <span class="font-cookie text-3xl md:text-4xl">
           <a href="/">Slovenia Travels</a>
         </span>
-        <ul class="flex gap-14">
+        <ul class="hidden gap-14 md:flex">
           <li class="font-bebas uppercase text-[1.62rem] font-semibold cursor-pointer link-underline">
             destinations
           </li>
@@ -21,6 +21,9 @@ export default function Nav() {
             travel now!
           </li>
         </ul>
+        <button class="md:hidden">
+          Menu
+        </button>
       </div>
     </nav>
   );

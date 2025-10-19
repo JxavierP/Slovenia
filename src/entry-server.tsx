@@ -9,7 +9,9 @@ export default createHandler(() => (
           <meta charset="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
           <link rel="icon" href="/favicon.ico" />
-          <link rel="preload" href="/fonts/Cookie-Regular.ttf" />
+          <link rel="preload" href="/fonts/Cookie-Regular.woff2" />
+          <link rel="preload" href="/fonts/Bebas-Neue-Regular.woff2" />
+          <link rel="preload" href="/fonts/Bebas-Neue-Semibold.woff2" />
           {assets}
         </head>
         <body>
