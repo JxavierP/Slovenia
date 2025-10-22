@@ -3,23 +3,22 @@ import Counter from "~/components/Counter";
 
 export default function Home() {
   return (
-    <main class="text-center mx-auto text-gray-700 p-4">
-      <h1 class="max-6-xs text-6xl text-sky-700 font-thin uppercase my-16">Hello world!</h1>
-      <Counter />
-      <p class="mt-8">
-        Visit{" "}
-        <a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
-          solidjs.com
-        </a>{" "}
-        to learn how to build Solid apps.
-      </p>
-      <p class="my-4">
-        <span>Home</span>
-        {" - "}
-        <A href="/about" class="text-sky-600 hover:underline">
-          About Page
-        </A>{" "}
-      </p>
+    <main class="h-full text-gray-700 overflow-auto">
+      <div class="w-full h-10/12">
+        <div class="bg-[url('/images/Ljubljana.jpg')] relative h-full bg-cover bg-bottom">
+          <div class="absolute inset-0 bg-black/40"></div>
+          <div class="relative z-10 text-white mx-auto max-w-[90%] w-full h-full justify-between flex items-center">
+            <div class="flex flex-col gap-5 justify-between h-full md:h-auto">
+              <p class="uppercase font-bebas text-2xl font-semibold">Welcome To
+                <span class="text-green-200 "> Slovenia Travels</span>
+              </p>
+              <h1 class="text-7xl font-bold font-bebas">Excursions to <span class="text-green-200">Slovenia</span></h1>
+              <p>Slovenia's greatest treasures are waiting for you. How will you feel Slovenia?</p>
+            </div>
+            <p class="hidden md:flex">Additional text that will be readable over the image.</p>
+          </div>
+        </div>
+      </div>
     </main>
   );
 }
